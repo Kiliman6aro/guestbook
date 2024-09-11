@@ -8,13 +8,13 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ConferenceController extends AbstractController
 {
-    #[Route('/', name: 'home')]
+    #[Route('/conference', name: 'conference')]
     public function index(): Response
     {
         return new Response(<<<EOF
             <html>
                 <body>
-                    <img src="/images/under-construction.gif" />
+                    <img src="{{ asset('/images/under-construction.gif') }}" />
                 </body>
             </html>
 EOF);

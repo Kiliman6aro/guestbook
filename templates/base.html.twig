@@ -1,17 +1,511 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="en-US">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+    <title>{% block title %}Healthy Food Restaurant in Rehoboth Beach | Seedbol Kitchen{% endblock %}</title>
+    <meta name="description" content="Enjoy a delicious healthy meal 🥗 by visiting Seedbol's Physical Restaurant located in Rehoboth Beach, or order delivery or even professional catering ⏰ We are open from 11:00 am to 7:00 pm any day of the week." />
+    <meta property="og:type" content="website" />
+    <meta property="og:publisher" content="https://www.facebook.com/SeedbolKitchen/" />
+    <meta property="og:site_name" content="Seedbol Kitchen" />
+    <meta property="og:title" content="Healthy Food Restaurant in Rehoboth Beach | Seedbol Kitchen" />
+    <meta property="og:description" content="Enjoy a delicious healthy meal 🥗 by visiting Seedbol's Physical Restaurant located in Rehoboth Beach, or order delivery or even professional catering ⏰ We are open from 11:00 am to 7:00 pm any day of the week." />
+    <meta property="og:url" content="https://seedbol.com/" />
+    <meta property="og:image" content="https://seedbol.com/images/seedbol-light.svg" />
+    <meta property="article:author" content="https://www.facebook.com/SeedbolKitchen/" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="THE BEST RESTAURANT IN REHOBOTH BEACH" />
+    <meta property="twitter:description" content="Enjoy a delicious healthy meal 🥗 by visiting Seedbol's Physical Restaurant located in Rehoboth Beach, or order delivery or even professional catering ⏰ We are open from 11:00 am to 7:00 pm any day of the week." />
+    <meta property="twitter:image" content="https://seedbol.com/images/seedbol-light.svg" />
+    <meta property="twitter:site" content="@seedbol.com" />
+    <meta property="twitter:creator" content="@seedbol.com" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://seedbol.com/" />
+    <link href="{{ asset('images/apple-touch-icon.png') }}" rel="apple-touch-icon" sizes="180x180" />
+    <link href="{{ asset('images/favicon-32x32.png') }}" rel="icon" sizes="32x32" type="image/png" />
+    <link href="{{ asset('images/favicon-16x16.png') }}" rel="icon" sizes="16x16" type="image/png" />
+    <link href="{{ asset('images/favicon.ico') }}" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TLKJXB4S');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+    <!-- BEGIN HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__menuBtnWrap">
+                    <button class="header__menuBtn m-secondary js-menu-btn-open">
+                        <span class="header__menuBtnSpan"></span>
+                        <span class="header__menuBtnSpan"></span>
+                        <span class="header__menuBtnSpan"></span>
+                    </button>
+                </div>
+                <div class="header__logoWrap">
+                    <a href="/" class="header__logoLink">
+                        <img src="{{ asset('images/seedbol-light.svg') }}" loading="lazy" alt="SeedBol Logo" class="header__logoImg" />
+                    </a>
+                </div>
+                <nav class="header__nav js-menu">
+                    <div class="header__menuCloseBtnWrap">
+                        <button class="header__menuCloseBtn js-menu-btn-close" type="button">
+                            &times;
+                        </button>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="/" class="menu__link m-home">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/menu.html" class="menu__link">Menu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/rehoboth-beach-seedbol-seed-eatery-about.html" class="menu__link">About Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://scnv.io/uc0j" class="menu__link" target="_blank">Download App</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://scnv.io/RZn3" class="menu__link" target="_blank">Review Us</a>
+                        </li>
+                        <!-- <li class="menu__item">
+            <a href="https://tmt.spotapps.co/job-listings?spot_id=87967&callback_url=http://seedbol.com/&_gl=1*1yozaqf*_ga*MTc3MTcwNTcyNy4xNzA5ODI4NzU1*_ga_VG24VK2VKT*MTcxMDc3NTA1NS4xNi4xLjE3MTA3NzUxMTEuMC4wLjA.#&source=footer" class="menu__link" target="_blank">Jobs</a>
+          </li> -->
+                        <li class="menu__item">
+                            <a href="https://my.loopz.io/card-checkout/ae272d5b-d8a0-4a2a-9992-4313023faa58" class="menu__link" target="_blank">Gift Cards</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308/catering#" class="menu__link" target="_blank">Catering</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/news.html" class="menu__link">News</a>
+                        </li>
+                    </ul>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/330550647646402" class="socials__link" target="_blank"><i class="social-icon fa fa-facebook"></i></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/seedbol" class="socials__link" target="_blank"><i class="social-icon fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="stores">
+                        <li class="stores__item">
+                            <a href="https://apps.apple.com/us/app/seedbol-kitchen/id1506598401" target="_blank" class="stores__link">
+                                <img alt="File:Download on the App Store Badge.svg" loading="lazy" src="{{ asset('images/download_on_the_App_Store_Badge.png') }}" />
+                            </a>
+                        </li>
+                        <li class="stores__item">
+                            <a href="https://play.google.com/store/apps/datasafety?id=gng.gonogomo.gonogo.mobileordering.com.seedEatery&hl=en&gl=US&pli=1" target="_blank" class="stores__link">
+                                <img alt="File:Download on the Google Play Badge.svg" loading="lazy" src="{{ asset('images/download_on_the_Google_Play_Badge.png') }}" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__navOverlay js-menu-overlay"></div>
+                <div class="header__btnWrap">
+                    <button class="header__btn btn btn-secondary js-btn-select">
+                        Order Now
+                    </button>
+                    <div class="select js-btn-select-holder">
+                        <div class="option">
+                            <a href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308" class="header__btn btn btn-secondary" target="_blank">Pick up</a>
+                        </div>
+                        <div class="option">
+                            <a href="https://order.online/store/seedbol-kitchen-rehoboth-beach-939053/" class="header__btn btn btn-secondary" target="_blank">Delivery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER EOF   -->
+    <!-- BEGIN CONTENT -->
+    <main class="content">
         {% block body %}{% endblock %}
-    </body>
+    </main>
+    <!-- CONTENT EOF   -->
+    <!-- BEGIN FOOTER -->
+    <footer class="footer bg-fixed">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <div class="footer__itemInner">
+                                <h5 class="footer__itemInnerTitle">Location</h5>
+                                <div class="footer__itemInnerContent">
+                                    <p class="footer__itemInnerText">
+                                        18979 Coastal Highway Unit 105<br />
+                                        Rehoboth Beach, DE<br />
+                                        19971
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__itemInner">
+                                <h5 class="footer__itemInnerTitle">Hours</h5>
+                                <div class="footer__itemInnerContent">
+                                    <p class="footer__itemInnerText">
+                                        SUN, MON, TUE, WED, THUR, FRI, SAT<br />
+                                        11:00 AM - 8:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__itemInner">
+                                <h5 class="footer__itemInnerTitle">Find Us On...</h5>
+                                <div class="footer__itemInnerContent">
+                                    <ul class="footer__itemInnerList">
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.google.com/maps?q=SEED+eatery,+18979+Coastal+Hwy+Unit+105,+Rehoboth+Beach,+DE+19971,+United+States&ftid=0x89b8b7c8797170bf:0xfc51473714a7ddb3&hl=en-US&gl=us&entry=gps&g_ep=INeCAw%3D%3D&g_st=ig" class="footer__itemInnerListItemLink"><i class="social-icon fa fa-google"></i></a>
+                                        </li>
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.yelp.com/biz/seed-eatery-rehoboth-beach?uid=GzQFiJ3eEbVt2q8nrtBKUw&utm_source=ishare" class="footer__itemInnerListItemLink"><i class="social-icon fa fa-yelp"></i></a>
+                                        </li>
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g34048-d20138001-Reviews-SEED_eatery-Rehoboth_Beach_Delaware.html" class="footer__itemInnerListItemLink"><i class="social-icon fa fa-tripadvisor"></i></a>
+                                        </li>
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.facebook.com/330550647646402" class="footer__itemInnerListItemLink"><i class="social-icon fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.instagram.com/seedbol" class="footer__itemInnerListItemLink"><i class="social-icon fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="footer__itemInnerListItem">
+                                            <a target="_blank" href="https://www.tiktok.com/@seedeatery?_t=8ZIZkd1ExlS&_r=1" class="footer__itemInnerListItemLink"><svg class="social-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z"></path>
+                                                </svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__itemInner">
+                                <h5 class="footer__itemInnerTitle">Contact Us</h5>
+                                <div class="footer__itemInnerContent">
+                                    <p class="footer__itemInnerText">
+                                        <a class="footer__itemInnerLink" href="tel:(302) 313 5981">(302) 313 5981</a>
+                                    </p>
+                                    <p class="footer__itemInnerText">
+                                        <a class="footer__itemInnerLink" href="mailto:info@seedbol.com">info@seedbol.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottomInner">
+                    <p class="footer__bottomText">
+                        We strive to make our website accessible to everybody.
+                        <a href="/accessibility-page-01.html" class="footer__bottomLink">Learn More.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="menuSection">
+        <div class="container fullwidth">
+            <div class="menuSection__inner">
+                <nav class="menuSection__nav">
+                    <ul class="menuSection__list">
+                        <li class="menuSection__listItem">
+                            <a href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308" class="menuSection__link" target="_blank">Pickup</a>
+                        </li>
+                        <li class="menuSection__listItem">
+                            <a href="https://order.online/store/seed-eatery-939053" class="menuSection__link" target="_blank">Delivery</a>
+                        </li>
+                        <li class="menuSection__listItem">
+                            <a href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308/catering" class="menuSection__link" target="_blank">Catering</a>
+                        </li>
+                        <li class="menuSection__listItem">
+                            <a href="https://my.loopz.io/card-checkout/ae272d5b-d8a0-4a2a-9992-4313023faa58" class="menuSection__link" target="_blank">Gift Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER EOF   -->
+    <div id="js-start-modal-1" class="mfp-hide white-popup-block">
+        <form class="form-modal">
+            <h4 class="title">Newsletter</h4>
+            <h6 class="subtitle">
+                Sign up for our newsletter & get exclusive offers and invites!
+            </h6>
+            <fieldset style="border: 0">
+                <ol class="form-list">
+                    <li class="form-list-item">
+                        <label for="email">Email (required)</label>
+                        <input id="email" email="email" type="text" placeholder="e.g. email@example.com" required />
+                    </li>
+                    <li class="form-list-item">
+                        <label for="phone">Phone number (optional)</label>
+                        <input id="phone" name="phone" type="phone" placeholder="e.g. 1234567890" />
+                    </li>
+                </ol>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" id="newsletter-checkbox-phone" required />
+                    <label for="newsletter-checkbox-phone">I'd like to get texts about specials, events, and other
+                        exclusive offers and announcements not available to the general
+                        public (required)
+                    </label>
+                </div>
+                <a href="https://www.spothopperapp.com/spots/87967/terms_and_conditions?_gl=1*x7jw6o*_ga*MTc3MTcwNTcyNy4xNzA5ODI4NzU1*_ga_VG24VK2VKT*MTcxMDc2NDE5NS4xNS4xLjE3MTA3NjU4MTEuMC4wLjA." target="_blank">Privacy Policy Terms and Conditions</a>
+                <ul class="form-info-list">
+                    <li>Message and data rates may apply.</li>
+                    <li>Message frequency varies.</li>
+                </ul>
+                <div class="btn-wrap">
+                    <button type="submit" class="btn btn-regular fullwidth">
+                        Submit
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="js-start-modal-2" class="mfp-hide white-popup-block">
+        <div class="modal-body modal-image-and-button">
+            <img alt="Best Food in Rehoboth Beach" loading="lazy" src="//static.spotapps.co/spots/a1/a0a9d944e44df6bf2e15db5b05e473/:original" />
+            <p>Order your favorite dishes in seconds!</p>
+            <div class="modal-footer">
+                <a class="btn btn-modal" target="_blank" href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308">Order</a>
+            </div>
+        </div>
+    </div>
+    <div id="js-start-modal-3" class="mfp-hide white-popup-block">
+        <div class="modal-body modal-image-and-button">
+            <img alt="" loading="lazy" src="//static.spotapps.co/spots/9b/895047c5d8491f9080ed950858f9d8/:original" />
+            <p>Tell us all about it! Leave us a review!</p>
+            <div class="modal-footer">
+                <a class="btn btn-modal" target="_blank" href="https://scnv.io/RZn3">Tell Us</a>
+            </div>
+        </div>
+    </div>
+    <div id="js-start-modal-4" class="mfp-hide white-popup-block">
+        <div class="modal-body modal-image-and-button">
+            <h1 class="modal-title">Did you know we do catering?</h1>
+            <h2 class="modal-subtitle">
+                Whatever your occasion, however big or small, we have the perfect
+                options to choose from.
+            </h2>
+            <img alt="Best catering Rehoboth Beach" loading="lazy" src="//static.spotapps.co/spots/d6/2c2b39ea8d4f4692ad419457116a6a/:original" />
+            <p>
+                Cater your birthday party, holiday party, corporate events, wedding
+                festivities and more!
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-modal" href="https://orders.hazlnut.com/menu/b/SEED%20eatery/n/308/p/85/g/1308/catering?source=pop_up&amp;spot_id=87967&amp;destination=catering&amp;promotion=catering">Catering Packages</a>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Seedbol",
+        "url": "https://seedbol.com/",
+        "logo": "https://seedbol.com/images/seedbol-light.svg"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Seedbol",
+            "item": "https://seedbol.com/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "🥬 Seedbol Kitchen 🥗",
+            "item": "https://seedbol.com/#Seedbol"
+        }]
+    }
+</script>
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "OfferShippingDetails",
+        "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "https://schema.org/Monday",
+                    "https://schema.org/Tuesday",
+                    "https://schema.org/Wednesday",
+                    "https://schema.org/Thursday",
+                    "https://schema.org/Friday"
+                ],
+                "opens": "11:00",
+                "closes": "19:00"
+            },
+            "cutoffTime": "12:00:00Z",
+            "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 2,
+                "unitText": "business day"
+            },
+            "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 2,
+                "maxValue": 5,
+                "unitText": "business day"
+            }
+        },
+        "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+        },
+        "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "1.00",
+            "currency": "USD"
+        },
+        "url": "https://seedbol.com/"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "image": [
+            "https://seedbol.com/images/g-1.jfif",
+            "https://seedbol.com/images/g-2.jfif",
+            "https://seedbol.com/images/g-3.jfif",
+            "https://seedbol.com/images/g-4.jfif",
+            "https://seedbol.com/images/g-5.jfif",
+            "https://seedbol.com/images/g-6.jfif",
+            "https://seedbol.com/images/g-7.jfif",
+            "https://seedbol.com/images/g-8.jfif",
+            "https://seedbol.com/images/g-9.jfif",
+            "https://seedbol.com/images/g-10.jfif",
+            "https://seedbol.com/images/g-11.jfif",
+            "https://seedbol.com/images/g-12.jfif"
+        ],
+        "name": "Seedbol",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "18979 Coastal Hwy Unit 105",
+            "addressLocality": "Rehoboth Beach",
+            "addressRegion": "Delaware",
+            "postalCode": "19971",
+            "addressCountry": "US"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lillian Ruiz"
+            }
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 38.7288697,
+            "longitude": -75.1330383
+        },
+        "url": "https://seedbol.com/",
+        "telephone": "+13023135981",
+        "servesCuisine": "American",
+        "priceRange": "$$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday"
+                ],
+                "opens": "11:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "11:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "11:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "11:00",
+                "closes": "19:00"
+            }
+        ],
+        "menu": "https://seedbol.com/menu.html"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Seedbol Kitchen",
+        "operatingSystem": "ANDROID",
+        "applicationCategory": "Shopping Application",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "8864"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+</script>
+
+
+<!-- BODY EOF   -->
+<script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>
+<script src="{{ asset('js/jquery-migrate-1.4.1.min.js') }}"></script>
+<script src="{{ asset('js/slick.js') }}"></script>
+<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/js/custom.js') }}"></script>
+<script src="https://static.newo.ai/chat/web-chat.js" name="web-chat" data-client-secret="77a1dc14-4174-4fa2-bf2b-911f9b1ae34c"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLKJXB4S"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
 </html>
